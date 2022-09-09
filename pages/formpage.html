@@ -6,65 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="formicon.png" type="image/x-icon">
     <title>Form</title>
-    <style>
-        #theForm {
-            color: white;
-            display: table;
-            padding: 20px;
-            background-color: blueviolet;
-            border: solid 2px black;
-        }
-        .nav{
-            background-color: purple;
-            background-attachment: fixed;
-            height: 50px;
-            font-size: 30px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-weight: bold;
-         }
-         .nav ul{
-            padding: 0;
-            margin: 0;
-            list-style-type: none;
-            text-align: right;
-         }
-         .nav li{
-            display: inline;
-            padding: 15px;
-            vertical-align: middle;
-         }
-         .nav a {
-            text-decoration: none;
-            color: purple;
-            padding: 4px 4px 4px 4px;
-            color: rgb(218, 152, 218);
-            vertical-align: middle;
-         }
-         .nav a:hover {
-            color: white;
-            background-color: purple;
-         }
-         .row {
-            display: table-row;
-         }
-         .row label {
-            display: table-cell;
-            padding: 10px;
-            text-align: right;
-         }
-         .row input {
-            display: table-cell;
-            padding: 10px;
-         }
-    </style>
+
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 20px;">
     <div class="nav">
         
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="formpage.html">Contact me</a></li>
-            <li><a href="tablepage.html">My Achievements and Prospects</a></li>
+            <li><a href="pages/formpage.html">Contact me</a></li>
+            <li><a href="pages/listpage.html">My Achievements and Prospects</a></li>
+            <li><a href="pages/tablepage.html">More about me</a></li>
         </ul>
     </div>
     <center>
@@ -88,8 +40,10 @@
 
      <div class="row">
         <b><label for="Comment">Comment: </label></b>  
-        <textarea name="Comment" id="Comment" cols="40" rows="10" required></textarea><br><br>
+        <textarea name="Comment" id="Comment" cols="40" rows="10" placeholder="Fill in your thought, perspective, anything! pertaining to this website" required></textarea><br><br>
      </div>
+
+     <input type="Submit">
 
     </fieldset>
 </form>

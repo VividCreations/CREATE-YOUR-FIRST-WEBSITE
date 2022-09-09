@@ -1,0 +1,78 @@
+.bigger-screen {
+    width: 300px;
+    height: 300px;
+ }
+ .nav{
+    background-color: white;
+    background-attachment: fixed;
+    height: 25px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100px;
+ }
+ .nav ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: left;
+ }
+ .nav li{
+    display: inline;
+    padding: 15px;
+    vertical-align: middle;
+ }
+ .nav a {
+    text-decoration: none;
+    color: gray;
+    padding: 4px 4px 4px 4px;
+    color: gray;
+    vertical-align: middle;
+ }
+ .nav a:hover {
+    color: gray;
+    background-color: white;
+ }
+ #main {
+   background-color: black;
+   color: white;
+   padding: 10px;
+   margin: 20px;
+ }
+ .bigger-screen {
+   float: right;
+   margin-left: 30px;
+ }
+ @media screen and (max-width: 560px){
+   .bigger-screen {
+   width: 50%;
+   height: 200px;
+   margin: 1%;
+   }
+}
+.button{
+   color: white;
+   background-color: rgb(11, 204, 11);
+   height: 50px;
+   width: 150px;
+}
+.button:hover {
+   background-color: rgb(48, 207, 48);
+   height: 50px;
+   width: 150px;
+}
+.container {
+   background-image: url(assets/images/secondguy.jpg);
+   color: white;
+   text-align: right;
+}
+.container1 {
+   display: flex;
+   flex-direction: column;
+   background: rgb(204, 204, 204);
+}
+.items {
+   width: 300px;
+   height: 200px;
+   margin: 10px;
+   padding: 10px;
+}
